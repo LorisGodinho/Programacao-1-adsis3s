@@ -1,13 +1,13 @@
 package Dia_17_04_2020;
 
 public class ValidacoesLoris {
-	private int radicando;
+	private double radicando;
 
 	public ValidacoesLoris(int valor) {
 		this.radicando = valor;
 	}
 
-	public int getRadicando() {
+	public double getRadicando() {
 		return radicando;
 	}
 	
@@ -20,7 +20,7 @@ public class ValidacoesLoris {
 			this.radicando = valor;
 		}
 		else {
-			throw new RuntimeException("O valor n„o È um quadrado perfeito");
+			throw new RuntimeException("O valor n√£o √© um quadrado perfeito");
 		}
 
 	}
