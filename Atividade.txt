@@ -1,0 +1,15 @@
+
+
+
+1) Segundo o Livro "Como programar" de Deitel os encapsulamentos são caracteriticas de visibilidade atribuidas a algum atributo ou método de alguma
+classe, necessário para proteger os dados processados de forma que mesmo em um relacionamento entre objetos, um não poderá ver os dados e comportamentos do outro
+a não ser que o encapsulamento permita. Um exemplo disso poode ser uma classe que possua atributos private porém outra classe precisa usar esse valor para 
+alguma equação. A solucão encontrada seria definir um método do tipo de encapsulamento public que retorne o valor do atributo necessário.
+
+
+2) O exemplo do uso de encapsulamento para tornar o código mais robusto seria declarar as variáveis de forma privada(private) garantindo assim
+que elas não poderam ser alteradas diretamente por outra classe com um simples atribuição. Para isso temos que utilizar um setter definido nessa primeira classe
+de forma publica(public) e através dele, esta nossa classe B, conseguirá fazer alterações no valor da variável privada. Um exemplo disso seria a classe carro que 
+criamos em sala, a mesma, possui atributos privados como o "combustivelNoTanqueEmLitros" e para que possamos alterar seu valor na classe de testes teriamos que definir
+um setter para ela, nessa caso temos mais de um método modificador para esse atributo, mas, o método público "ligar" decrementava uma quantidade nessa variável e assim
+podemos usar este para alterar a variável na classe de testes.
